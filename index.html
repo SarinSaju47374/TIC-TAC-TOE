@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="playerChoose">
+        <div class="chooseTitle">
+            Choose your Player
+        </div>
+        <div class="players">
+            <button class="playerxBtn" onclick="startGame(this)">PLAYER (X)</button>
+            <button class="playeroBtn" onclick="startGame(this)">PLAYER (O)</button>
+        </div>
+    </div>
+    <div class="playerBoard">
+        <div class="player">
+            <span class="slider"></span>
+            <span class="playerX">PLAYER (X)</span>
+            <span class="playerO">PLAYER (O)</span>
+        </div>
+        <div class="mainBoard">
+            <span>
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+            </span>
+            <span>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+            </span>
+            <span>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </span>
+        </div>
+    </div>
+    <div class="winnerBoard">
+        <div class="winner">SANJU WON THE GAME</div>
+        <button onclick="restartGame()">RESTART</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
